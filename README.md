@@ -15,9 +15,9 @@
 
 **Maisa Maximo**
 
-![](/assets/bxl-twitter.svg) [@https:\/\/twitter.com\/maisamaximo\_](https://twitter.com/https:\/\/twitter.com\/maisamaximo\_)
-![](/assets/bxl-github.svg) [@maisamaximo](https://github.com/maisamaximo)
-![](/assets/bxl-linkedin-square.svg) [@https:\/\/www.linkedin.com\/in\/maisa-maximo\/](https://linkedin.com/in/https:\/\/www.instagram.com\/in\/maisa-maximo\/)
+![](/assets/bxl-twitter.svg) [@https:\/\/twitter.com\/maisamaximo\_](https://twitter.com/https:\/\/twitter.com\/maisamaximo\_) </br>
+![](/assets/bxl-github.svg) [@maisamaximo](https://github.com/maisamaximo)</br>
+![](/assets/bxl-linkedin-square.svg) [@https:\/\/www.linkedin.com\/in\/maisa-maximo\/](https://linkedin.com/in/https:\/\/www.instagram.com\/in\/maisa-maximo\/)</br>
 ![](/assets/bxl-instagram.svg) [@https:\/\/www.linkedin.com\/maisamaximo_\/](https://instagram.com/https:\/\/www.instagram.com\/maisamaximo_\/)
 
 ## Show your support
