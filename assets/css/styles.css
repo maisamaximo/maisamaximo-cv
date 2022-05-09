@@ -100,15 +100,15 @@ body.scale-cv {
 }
 
 .scale-cv #communities {
-  padding-top: 6rem;
+  padding-top: 10rem;
 }
 
 .scale-cv #skills {
-  padding-top: 5rem;
+  padding-top: 7rem;
 }
 
 .scale-cv #area-cv {
-  height: 284.5vh;
+  height: 300 vh;
 }
 
 .scale-cv .bd-container {
