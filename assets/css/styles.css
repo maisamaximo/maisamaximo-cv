@@ -8,13 +8,11 @@
   /*========== Colors ==========*/
   --title-color: #0b0a0a;
   --text-color: #403a3a;
-  --text-color-light: #707070;
+  --text-color-light: #a01474;
   --container-color: #fafafa;
-  --container-color-alt: #021b33;
+  --container-color-alt: #f0efef;
   --body-color: #fcfcfc;
   --text-color-light-gray: #707070;
-  --side-color: #f2f2f2;
-  --side-text-color: #bfbfbf;
 
   /*========== Font and typography ==========*/
   --body-font: 'Poppins', sans-serif;
@@ -56,7 +54,6 @@ body.dark-theme {
   --container-color: #212121;
   --container-color-alt: #181616;
   --body-color: #2b2b2b;
-  --side-color: #f2f2f2;
 }
 /*========== Button Dark/Light ==========*/
 .change-theme {
@@ -81,15 +78,37 @@ body.scale-cv {
   --small-font-size: 0.75rem;
   --smaller-font-size: 0.688rem;
 }
+/*========== Generate PDF button ==========*/
+.generate-pdf {
+  /* display: none; */
+  position: absolute;
+  top: 2.2rem;
+  left: 0;
+  font-size: 1.2rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
 
+.generate-pdf:hover {
+  color: var(--text-color-light);
+}
 /*========== Classes modified to reduce size and print on A4 sheet ==========*/
 .scale-cv .change-theme,
-.scale-cv .generate-pdf {
+.scale-cv .generate-pdf,
+.scale-cv #interest {
   display: none;
 }
 
-.generate-pdf {
-  display: none !important;
+.scale-cv #communities {
+  padding-top: 6rem;
+}
+
+.scale-cv #skills {
+  padding-top: 5rem;
+}
+
+.scale-cv #area-cv {
+  height: 284.5vh;
 }
 
 .scale-cv .bd-container {
@@ -313,7 +332,7 @@ img {
 }
 /* Active menu link */
 .active-link {
-  color: var(--container-color-alt);
+  color: var(--text-color-light);
 }
 
 /*========== HOME ==========*/
@@ -375,14 +394,17 @@ img {
 }
 
 .home__button-movil:hover {
-  background-color: var(--container-color-alt);
-  color: #f2f2f2;
+  background-color: var(--text-color-light);
+  color: var(--container-color);
 }
 
 /*========== SOCIAL ==========*/
 .social__container {
-  grid-template-columns: max-content;
-  gap: 1rem;
+  /* grid-template-columns: max-content;
+  gap: 1rem; */
+  display: inline-block;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -398,14 +420,12 @@ img {
 }
 
 .social__icon {
-  margin-right: 0.25rem;
   font-size: 1.2rem;
 }
 
 /*========== PROFILE ==========*/
 .profile__description {
   text-align: center;
-  font-size: var(--small-font-size);
 }
 
 /*========== EDUCATION AND EXPERIENCE ==========*/
@@ -452,9 +472,6 @@ img {
 .education__studies,
 .experience__company {
   font-size: var(--small-font-size);
-}
-
-.experience__company {
   color: var(--title-color);
 }
 
@@ -547,7 +564,7 @@ img {
 
 .scrolltop__icon {
   font-size: 1.2rem;
-  color: #f2f2f2;
+  color: var(--text-color);
 }
 
 .show-scroll {
@@ -594,21 +611,7 @@ img {
   }
 
   .generate-pdf {
-    display: inline-block !important;
-    color: #f2f2f2;
-    position: absolute;
-    top: 2.2rem;
-    left: 0;
-    font-size: 1.2rem;
-    cursor: pointer;
-  }
-
-  .generate-pdf:hover {
-    color: var(--text-color-light);
-  }
-
-  .change-theme {
-    color: #f2f2f2;
+    display: inline-block;
   }
 
   .section-title,
@@ -635,23 +638,6 @@ img {
   .interests__container {
     grid-template-columns: repeat(4, max-content);
     column-gap: 3.5rem;
-  }
-
-  .home__title,
-  .home__profession,
-  .resume__left .section-title,
-  .education__title,
-  .resume__left .experience__title,
-  .resume__left .education__studies {
-    color: var(--side-color);
-  }
-
-  .home__information,
-  .social__link,
-  .profile__description,
-  .education__year,
-  .skills__name {
-    color: var(--side-text-color);
   }
 }
 /* Classes modified for large screen size */ ;
