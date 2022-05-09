@@ -1,544 +1,458 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="icon" type="imagem/png" href="/assets/img/profile_bw.png" />
+    <title>Lucas Rosa - CV</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-  <link rel="icon" type="imagem/png" href="/assets/img/profile.jpg" />
-  <title>Maisa Maximo - CV</title>
-</head>
+  <body>
+    <header class="l-header" id="header">
+      <nav class="nav bd-container">
+        <a href="#" class="nav__logo">Lucas</a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link"
+                ><i class="bx bx-home nav__icon"></i>Home</a
+              >
+            </li>
 
-<body>
-  <header class="l-header" id="header">
-    <nav class="nav bd-container">
-      <a href="#" class="nav__logo">Maisa</a>
-      <div class="nav__menu" id="nav-menu">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#home" class="nav__link active-link"><i class="bx bx-home nav__icon"></i>Home</a>
-          </li>
+            <li class="nav__item">
+              <a href="#profile" class="nav__link"
+                ><i class="bx bx-user nav__icon"></i>Profile</a
+              >
+            </li>
 
-          <li class="nav__item">
-            <a href="#profile" class="nav__link"><i class="bx bx-user nav__icon"></i>Profile</a>
-          </li>
+            <li class="nav__item">
+              <a href="#education" class="nav__link"
+                ><i class="bx bx-book nav__icon"></i>Education</a
+              >
+            </li>
 
-          <li class="nav__item">
-            <a href="#education" class="nav__link"><i class="bx bx-book nav__icon"></i>Education</a>
-          </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link"
+                ><i class="bx bx-code-curly nav__icon"></i>Skills</a
+              >
+            </li>
 
-          <li class="nav__item">
-            <a href="#skills" class="nav__link"><i class='bx bx-code-curly nav__icon'></i>Skills</a>
-          </li>
+            <li class="nav__item">
+              <a href="#experience" class="nav__link"
+                ><i class="bx bx-briefcase-alt nav__icon"></i>Experience</a
+              >
+            </li>
 
-          <li class="nav__item">
-            <a href="#experience" class="nav__link"><i class="bx bx-briefcase-alt nav__icon"></i>Experience</a>
-          </li>
+            <li class="nav__item">
+              <a href="#languages" class="nav__link"
+                ><i class="bx bx-world nav__icon"></i>Languages</a
+              >
+            </li>
+          </ul>
+        </div>
 
-          <li class="nav__item">
-            <a href="#communities" class="nav__link"><i class='bx bx-bookmark-heart nav__icon'></i>Communities</a>
-          </li>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-grid-alt"></i>
+        </div>
+      </nav>
+    </header>
 
-          <li class="nav__item">
-            <a href="#languages" class="nav__link"><i class='bx bx-world nav__icon'></i>Languages</a>
-          </li>
+    <main class="l-main bd-container">
+      <!-- All elements within this div, is generated in PDF -->
+      <div class="resume" id="area-cv">
+        <div class="resume__left">
+          <!--========== HOME ==========-->
+          <section class="home" id="home">
+            <div class="home__container section bd-grid">
+              <div class="home__data bd-grid">
+                <img
+                  src="assets/img/profile_bw.png"
+                  alt="profile picture"
+                  class="home__img"
+                />
+                <h1 class="home__title">LUCAS <b>ROSA</b></h1>
+                <h3 class="home__profession">Full Stack developer</h3>
+                <!-- <div>
+                  <a
+                    download=""
+                    href="assets/pdf/lucasrosa_resume.pdf"
+                    class="home__button-movil"
+                    >Download</a
+                  >
+                </div> -->
+              </div>
+              <div class="home__address bd-grid">
+                <span class="home__information">
+                  <i class="bx bx-map home__icon"></i>Lisbon, Portugal
+                </span>
 
-          <li class="nav__item">
-            <a href="#hackathon" class="nav__link"><i class='bx bx-trophy nav__icon'></i></i>Hackathon</a>
-          </li>
-
-          <li class="nav__item">
-            <a href="#interest" class="nav__link"><i class='bx bx-joystick-alt nav__icon'></i>Interest</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="nav__toggle" id="nav-toggle">
-        <i class='bx bx-grid-alt'></i>
-      </div>
-    </nav>
-  </header>
-
-  <main class="l-main bd-container">
-    <!-- All elements within this div, is generated in PDF -->
-    <div class="resume" id="area-cv">
-      <div class="resume__left">
-        <!--========== HOME ==========-->
-        <section class="home" id="home">
-          <div class="home__container section bd-grid">
-            <div class="home__data bd-grid">
-              <img src="assets/img/profile.jpg" alt="profile picture" class="home__img">
-              <h1 class="home__title">MAISA <b>MAXIMO</b></h1>
-              <h3 class="home__profession">Full Stack developer</h3>
-              <div>
-                <a download="" href="assets/pdf/maisamaximo_resume.pdf" class="home__button-movil">Download</a>
+                <span class="home__information">
+                  <i class="bx bx-envelope home__icon"></i>
+                  lucas.rosa.2996@gmail.com
+                </span>
               </div>
             </div>
-            <div class="home__address bd-grid">
-              <span class="home__information">
-                <i class="bx bx-map home__icon"></i>Oeiras/Portugal </span>
+            <!-- Theme change button -->
+            <i
+              class="bx bx-moon change-theme"
+              title="Theme"
+              id="theme-button"
+            ></i>
 
-              <span class="home__information">
-                <i class="bx bx-envelope home__icon"></i>
-                ferreira.maximo.maisa@gmail.com
-              </span>
+            <!-- Button to generate and download the pdf. Available for desktop. -->
+            <i
+              class="bx bx-download generate-pdf"
+              title="Generate PDF"
+              id="resume-button"
+            ></i>
+          </section>
 
-              <!-- <span class="home__information">
-                <i class="bx bx-phone home__icon"></i>
-                +351 914 146 005
-              </span> -->
+          <!--========== SOCIAL ==========-->
+          <section class="social section">
+            <h2 class="section-title">SOCIAL</h2>
+            <div class="social__container bd-grid">
+              <a
+                href="https://www.linkedin.com/in/lucas-r-a4020796/"
+                target="_blank"
+                class="social__link"
+              >
+                <i class="bx bxl-linkedin-square social__icon"></i> @lucas_rosa
+              </a>
+
+              <a
+                href="https://github.com/LucasE2996"
+                target="_blank"
+                class="social__link"
+              >
+                <i class="bx bxl-github social__icon"></i> @LucasE2996
+              </a>
             </div>
-          </div>
-          <!-- Theme change button -->
-          <i class="bx bx-moon change-theme" title="Theme" id="theme-button"></i>
+          </section>
 
-          <!-- Button to generate and download the pdf. Available for desktop. -->
-          <i class="bx bx-download generate-pdf" title="Generate PDF" id="resume-button"></i>
-        </section>
+          <!--========== PROFILE ==========-->
+          <section class="profile section" id="profile">
+            <h2 class="section-title">PROFILE</h2>
+            <p class="profile__description">
+              I am passionate about technology, innovation, and
+              self-improvement. Currently working as a Java Engineer in an
+              innovative company that uses high-end technology such as
+              microservices, messaging to produce highly scalable, and modular
+              software aiming to solve complex problems. Previously working with
+              workforce optimization software, improving products, helping on
+              the development of new features, and implementing automation
+              tests.
+            </p>
+          </section>
 
-        <!--========== SOCIAL ==========-->
-        <section class="social section">
-          <h2 class="section-title">SOCIAL</h2>
-          <div class="social__container bd-grid">
-            <a href="https://www.linkedin.com/in/maisa-maximo/" target="_blank" class="social__link">
-              <i class="bx bxl-linkedin-square social__icon"></i>
-            </a>
+          <!--========== EDUCATION ==========-->
+          <section class="education section" id="education">
+            <h2 class="section-title">Education</h2>
 
-            <a href="https://www.instagram.com/maisamaximo_/?hl=en" target="_blank" class="social__link">
-              <i class="bx bxl-instagram-alt social__icon"></i>
-            </a>
-
-
-            <a href="https://codepen.io/maisamaximo" target="_blank" class="social__link">
-              <i class='bx bxl-codepen social__icon'></i>
-            </a>
-
-
-            <a href="https://medium.com/@maisa_maximo" target="_blank" class="social__link">
-              <i class='bx bxl-medium-square social__icon'></i>
-            </a>
-
-
-            <a href="https://github.com/maisamaximo" target="_blank" class="social__link">
-              <i class='bx bxl-github social__icon'></i>
-            </a>
-
-
-            <a href="https://www.behance.net/maisa_maxia0ca" target="_blank" class="social__link">
-              <i class='bx bxl-behance social__icon'></i>
-            </a>
-
-          </div>  
-        </section>
-
-        <!--========== PROFILE ==========-->
-        <section class="profile section" id="profile">
-          <h2 class="section-title">PROFILE</h2>
-          <p class="profile__description">I'm a Full Stack developer, passionate about designing, front-end development, and web accessibility. </br>
-            My focus is on creating well-structured and clean code by using best practices and design patterns. </br>
-            I have strong skills in solving problems.</p>
-        </section>
-
-        <!--========== EDUCATION ==========-->
-        <section class="education section" id="education">
-          <h2 class="section-title">Education</h2>
-
-          <div class="education__container bd-grid">
-
-            <div class="education__content">
-              <div class="education__time">
-                <span class="education__rounder"></span>
-                <span class="education__line"></span>
-
+            <div class="education__container bd-grid">
+              <div class="education__content">
+                <div class="education__time">
+                  <span class="education__rounder"></span>
+                  <span class="education__line"></span>
+                </div>
+                <div class="education__data bd-grid">
+                  <h3 class="education__title">GoStack Bootcamp</h3>
+                  <span class="education__studies">Rocketseat</span>
+                  <span class="education__year">2019 - 2020</span>
+                </div>
               </div>
-              <div class="education__data bd-grid">
-                <h3 class="education__title">Postgraduate Cloud Computing</h3>
-                <span class="education__studies">Descomplica</span>
-                <span class="education__year">Dec 2020</span>
-              </div>
-            </div>
 
-            <div class="education__content">
-              <div class="education__time">
-                <span class="education__rounder"></span>
-                <span class="education__line"></span>
-
+              <div class="education__content">
+                <div class="education__time">
+                  <span class="education__rounder"></span>
+                  <span class="education__line"></span>
+                </div>
+                <div class="education__data bd-grid">
+                  <h3 class="education__title">
+                    Nanodegree Full Stack Web Developer
+                  </h3>
+                  <span class="education__studies">Udacity</span>
+                  <span class="education__year">2018 - 2019</span>
+                </div>
               </div>
-              <div class="education__data bd-grid">
-                <h3 class="education__title">Nanodegree Java Web Developer</h3>
-                <span class="education__studies">Udacity</span>
-                <span class="education__year">Jan 2021 - Jun 2021</span>
+
+              <div class="education__content">
+                <div class="education__time">
+                  <span class="education__rounder"></span>
+                </div>
+                <div class="education__data bd-grid">
+                  <h3 class="education__title">Computer Engineering</h3>
+                  <span class="education__studies">ETEP</span>
+                  <span class="education__year">2014 - 2018</span>
+                </div>
               </div>
             </div>
+          </section>
 
-            <div class="education__content">
-              <div class="education__time">
-                <span class="education__rounder"></span>
-                <span class="education__line"></span>
+          <!--========== SKILLS  ==========-->
+          <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
 
-              </div>
-              <div class="education__data bd-grid">
-                <h3 class="education__title">Bachelor's degree, Computer Science</h3>
-                <span class="education__studies">IBTA</span>
-                <span class="education__year">Jan 2014 - Apr 2019</span>
-              </div>
+            <div class="skills__content bd-grid">
+              <ul class="skills__data">
+                <li class="skills__name">
+                  <span class="skills__circle"></span>
 
-            </div>
+                  Accessibility
+                </li>
 
-            <div class="education__content">
-              <div class="education__time">
-                <span class="education__rounder"></span>
-              </div>
-              <div class="education__data bd-grid">
-                <h3 class="education__title">Web Front-End Developer</h3>
-                <span class="education__studies">Udacity</span>
-                <span class="education__year">Jan 2018 - Apr 2018</span>
-              </div>
+                <li class="skills__name">
+                  <span class="skills__circle"></span>
+                  Angular
+                </li>
 
-            </div>
-          </div>
-        </section>
+                <li class="skills__name">
+                  <span class="skills__circle"></span>
+                  ReactJS
+                </li>
 
+                <li class="skills__name">
+                  <span class="skills__circle"></span>
+                  VueJS
+                </li>
 
-        <!--========== SKILLS  ==========-->
-        <section class="skills section" id="skills">
-          <h2 class="section-title">Skills</h2>
+                <li class="skills__name">
+                  <span class="skills__circle"></span>
+                  JSF 2.2
+                </li>
 
-          <div class="skills__content bd-grid">
-            <ul class="skills__data">
-              <li class="skills__name">
-                <span class="skills__circle"></span>
+                <li class="skills__name">
+                  <span class="skills__circle"></span>
+                  SQL / NoSQL
+                </li>
+              </ul>
 
-                Accessibility
-              </li>
+              <ul class="skills__data">
+                <li class="skills__name">
+                  <span class="skills__circle"></span>
+                  Hibernate / JPA
+                </li>
 
-              <li class="skills__name">
-                <span class="skills__circle"></span>
-                Angular
-              </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span>
+                  REST Interface
+                </li>
 
-              <li class="skills__name">
-                <span class="skills__circle"></span>
-                ReactJS
-              </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span>
+                  Java 8
+                </li>
 
-              <li class="skills__name">
-                <span class="skills__circle"></span>
-                VueJS
-              </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span>
+                  Spring Boot
+                </li>
 
-              <li class="skills__name">
-                <span class="skills__circle"></span>
-                JSF 2.2
-              </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span>
+                  JUnit
+                </li>
 
-              <li class="skills__name">
-                <span class="skills__circle"></span>
-                SQL / NoSQL
-              </li>
-            </ul>
-
-            <ul class="skills__data">
-              <li class="skills__name">
-                <span class="skills__circle"></span>
-                Hibernate / JPA
-              </li>
-
-              <li class="skills__name">
-                <span class="skills__circle"></span>
-                REST Interface
-              </li>
-
-              <li class="skills__name">
-                <span class="skills__circle"></span>
-                Java 8
-              </li>
-
-              <li class="skills__name">
-                <span class="skills__circle"></span>
-                Spring Boot
-              </li>
-
-              <li class="skills__name">
-                <span class="skills__circle"></span>
-                JUnit
-              </li>
-
-              <li class="skills__name">
-                <span class="skills__circle"></span>
-                Agile Methodology
-              </li>
-
-            </ul>
-          </div>
-        </section>
-
-      </div>
-
-      <div class="resume__right">
-        <!--========== EXPERIENCE ==========-->
-        <section class="experience section" id="experience">
-          <h2 class="section-title">Experience</h2>
-          <div class="experience__container bd-grid">
-
-            <div class="experience__content">
-              <div class="experience__time">
-                <span class="experience__rounder"></span>
-                <span class="experience__line"></span>
-              </div>
-
-              <div class="experience__data bd-grid">
-                <h3 class="experience__title">Hyphen Digital Experience</h3>
-                <span class="experience__company">Jul 2021 - Present | Frontend Developer </span>
-                <p class="experience__description">Project: NBB - National Bank of Bahrain</p>
-                <p class="experience__description">Banking system development using Angular 11 and the Backbase Engagement Banking Platform (EBP). <br>
-                  I work in parallel with the UI/UX team, providing and developing the best user interface according to the client.
-                  Work with mixed team (backend, QA, frontend, mobile iOS, mobile Android, UI/UX)
-                </p>
-              </div>
-            </div>
-
-            <div class="experience__content">
-              <div class="experience__time">
-                <span class="experience__rounder"></span>
-                <span class="experience__line"></span>
-              </div>
-
-              <div class="experience__data bd-grid">
-                <h3 class="experience__title">Banco Bradesco</h3>
-                <span class="experience__company">Mar 2021 - Jul 2021 | System Analyst </span>
-                <p class="experience__description">Project: Salesforce credit recovery (Marketing cloud), tax-benefit
-                  system, and RCB credit recovery.</p>
-                <p class="experience__description">Project management with a focus on credit recovery, requirements
-                  analysis, solution design, delivery management.
-                </p>
-              </div>
-            </div>
-
-            <div class="experience__content">
-              <div class="experience__time">
-                <span class="experience__rounder"></span>
-                <span class="experience__line"></span>
-              </div>
-
-              <div class="experience__data bd-grid">
-                <h3 class="experience__title">Tata Consultancy Service</h3>
-                <span class="experience__company">Mar 2020 - Feb 2021 | Fullstack Developer (Angular)</span>
-                <p class="experience__description">Project: PIX - A new way to make transfers and payments instantly and
-                  that works every day of the year.</p>
-                <p class="experience__description">Sustainable and reusable Angular system development to meet customer needs. Work on technology improvements and implementations in support of business processes.<br>Development of microservices (JSF and Spring boot) for integration with Banco Central data. Development of the Internet Banking interface (Angular 7, 8, 9) and integration with microservices.</p>
-              </div>
-            </div>
-
-            <div class="experience__content">
-              <div class="experience__time">
-                <span class="experience__rounder"></span>
-                <span class="experience__line"></span>
-              </div>
-
-              <div class="experience__data bd-grid">
-                <h3 class="experience__title">4CADIA</h3>
-                <span class="experience__company">Jun 2019 - Dec 2019 | Full-Stack Developer </span>
-                <p class="experience__description">Project: Ethereum and Bitcoin gateway - analysis of transaction and
-                  fee blocks to collect fees correctly.</p>
-                <p class="experience__description">Development of the system to get the correct rate values for each
-                  transaction made on the Atlas Quantum platform.</p>
-              </div>
-            </div>
-
-            <div class="experience__content">
-              <div class="experience__time">
-                <span class="experience__rounder"></span>
-                <span class="experience__line"></span>
-              </div>
-
-              <div class="experience__data bd-grid">
-                <h3 class="experience__title">WINTAYLOR - Workforce Optimization</h3>
-                <span class="experience__company">Feb 2019 - Jun 2019 | Java Developer </span>
-                <p class="experience__description">Project: Workforce Management System - cost reduction and
-                  productivity increase.</p>
-                <p class="experience__description">Development of a dashboard to display customer workforce data to
-                  assist in decision-making and data visibility.</p>
-              </div>
-            </div>
-
-            <div class="experience__content">
-              <div class="experience__time">
-                <span class="experience__rounder"></span>
-                <span class="experience__line"></span>
-              </div>
-
-              <div class="experience__data bd-grid">
-                <h3 class="experience__title">FITec</h3>
-                <span class="experience__company">Apr 2018 - Feb 2019 | Java Developer </span>
-                <p class="experience__description">Project: Revenue Manager - Billing System.</p>
-                <p class="experience__description">Development of microservices of accountability systems. Monitoring of
-                  delivery via CI / CD.</p>
-
-              </div>
-            </div>
-
-            <div class="experience__content">
-              <div class="experience__time">
-                <span class="experience__rounder"></span>
-              </div>
-
-              <div class="experience__data bd-grid">
-                <h3 class="experience__title">Focusnetworks - OnLife Business Group</h3>
-                <span class="experience__company">Jan 2018 - Apr 2018 | Java Developer </span>
-                <p class="experience__description">Project: Hyper Class - Good Architecture and Development Practices.
-                </p>
-                <p class="experience__description">Study and development of software according to best practices and
-                  pillars of object orientation, clean code and Domain Driven Design. Spring Framework, Design Patterns,
-                  Design Principles, S.O.L.I.D, Clean Code, DDD (Domain Driven Design), TDD.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!--========== COMMUNITIES ==========-->
-        <section class="references section" id="communities">
-          <h2 class="section-title">Communities</h2>
-          <div class="references__container bd-grid">
-
-            <div class="references__content bd-grid">
-              <span class="references__subtitle">Assistant</span>
-              <h3 class="references__title">Google Developer Group SJC</h3>
-            </div>
-
-            <div class="references__content bd-grid">
-              <span class="references__subtitle">Assistant</span>
-              <h3 class="references__title">Women Techmakers SJC</h3>
-            </div>
-
-            <div class="references__content bd-grid">
-              <span class="references__subtitle">Instructor</span>
-              <h3 class="references__title">Introduction to JSF for web applications</h3>
-              <ul class="references__contact">
-                <li>Digital Innovation One</li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span>
+                  Agile Methodology
+                </li>
               </ul>
             </div>
+          </section>
+        </div>
 
-            <div class="references__content bd-grid">
-              <span class="references__subtitle">Talk</span>
-              <h3 class="references__title">Clean code: a code that not only you and God understand</h3>
-              <ul class="references__contact">
-                <li>Front in Vale</li>
-              </ul>
+        <div class="resume__right">
+          <!--========== EXPERIENCE ==========-->
+          <section class="experience section" id="experience">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience__container bd-grid">
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <span class="experience__line"></span>
+                </div>
+
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title">
+                    Full-stack Software Engineer
+                  </h3>
+                  <span class="experience__company"
+                    >Jun 2021 - Present | <strong>Multivision</strong>
+                  </span>
+                  <p class="experience__description">Project: xxx</p>
+                  <p class="experience__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Error, qui commodi recusandae debitis libero ea.
+                  </p>
+                  <p class="experience__description">
+                    <strong>Technologies:</strong> Lorem ipsum dolor sit amet.
+                  </p>
+                  <p class="experience__description">
+                    <strong>Methodology:</strong> Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+              </div>
+
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <span class="experience__line"></span>
+                </div>
+
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title">Java Software Engineer</h3>
+                  <span class="experience__company"
+                    >Feb 2021 - Jun 2021 | <strong>Itaú</strong>
+                  </span>
+                  <p class="experience__description">Project: xxx</p>
+                  <p class="experience__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Error, qui commodi recusandae debitis libero ea.
+                  </p>
+                  <p class="experience__description">
+                    <strong>Technologies:</strong> Lorem ipsum dolor sit amet.
+                  </p>
+                  <p class="experience__description">
+                    <strong>Methodology:</strong> Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+              </div>
+
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <span class="experience__line"></span>
+                </div>
+
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title">Java Software Engineer</h3>
+                  <span class="experience__company"
+                    >May 2020 - Feb 2021 | <strong>Avenue Code</strong></span
+                  >
+                  <p class="experience__description">Project: xxx</p>
+                  <p class="experience__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Error, qui commodi recusandae debitis libero ea.
+                  </p>
+                  <p class="experience__description">
+                    <strong>Technologies:</strong> Lorem ipsum dolor sit amet.
+                  </p>
+                  <p class="experience__description">
+                    <strong>Methodology:</strong> Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+              </div>
+
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <span class="experience__line"></span>
+                </div>
+
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title">Full-stack Developer</h3>
+                  <span class="experience__company"
+                    >Jun 2019 - Dec 2019 | <strong>Wintaylor</strong>
+                  </span>
+                  <p class="experience__description">Project: xxx</p>
+                  <p class="experience__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Error, qui commodi recusandae debitis libero ea.
+                  </p>
+                  <p class="experience__description">
+                    <strong>Technologies:</strong> Lorem ipsum dolor sit amet.
+                  </p>
+                  <p class="experience__description">
+                    <strong>Methodology:</strong> Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+              </div>
+
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <span class="experience__line"></span>
+                </div>
+
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title">Full-stack Developer</h3>
+                  <span class="experience__company"
+                    >Oct 2018 - Feb 2019 | <strong>FITec</strong>
+                  </span>
+                  <p class="experience__description">Project: xxx</p>
+                  <p class="experience__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Error, qui commodi recusandae debitis libero ea.
+                  </p>
+                  <p class="experience__description">
+                    <strong>Technologies:</strong> Lorem ipsum dolor sit amet.
+                  </p>
+                  <p class="experience__description">
+                    <strong>Methodology:</strong> Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+              </div>
+
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                </div>
+
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title">Java Developer</h3>
+                  <span class="experience__company"
+                    >Jan 2018 - Apr 2018 | <strong>FocusNetworks</strong>
+                  </span>
+                  <p class="experience__description">Project: xxx</p>
+                  <p class="experience__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Error, qui commodi recusandae debitis libero ea.
+                  </p>
+                  <p class="experience__description">
+                    <strong>Technologies:</strong> Lorem ipsum dolor sit amet.
+                  </p>
+                  <p class="experience__description">
+                    <strong>Methodology:</strong> Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+              </div>
             </div>
+          </section>
 
-            <div class="references__content bd-grid">
-              <span class="references__subtitle">Talk</span>
-              <h3 class="references__title">Web accessibility: UI is not the same as UX</h3>
-              <ul class="references__contact">
-                <li>International Women's Day GDG</li>
-              </ul>
+          <!--========== LANGUAGES ==========-->
+          <section class="languages section" id="languages">
+            <h2 class="section-title">Languages</h2>
+            <div class="languages__container">
+              <div class="languages__content bd-grid">
+                <li class="languages__name">
+                  <span class="languages__circle"></span> English |<b>B2+</b>
+                </li>
+
+                <li class="languages__name">
+                  <span class="languages__circle"></span> Portuguese |<b
+                    >Native</b
+                  >
+                </li>
+              </div>
             </div>
-
-            <div class="references__content bd-grid">
-              <span class="references__subtitle">Talk</span>
-              <h3 class="references__title">10 principles of development you should know</h3>
-              <ul class="references__contact">
-                <li>Code like a girl GDGirl</li>
-              </ul>
-            </div>
-          </div>
-
-        </section>
-
-        <!--========== LANGUAGES ==========-->
-        <section class="languages section" id="languages">
-          <h2 class="section-title">Languages</h2>
-          <div class="languages__container">
-            <div class="languages__content bd-grid">
-              <li class="languages__name">
-                <span class="languages__circle"></span> English
-              </li>
-
-              <li class="languages__name">
-                <span class="languages__circle"></span> Portuguese
-              </li>
-
-              <li class="languages__name">
-                <span class="languages__circle"></span> Spanish
-              </li>
-            </div>
-          </div>
-        </section>
-
-        <!--========== HACKATHON ==========-->
-        <section class="certificate section" id="hackathon">
-          <h2 class="section-title">Hackathon</h2>
-          <div class="certificate__container bd-grid">
-            <div class="certificate__content">
-              <span class="references__subtitle">1º place</span>
-              <h3 class="certificate__title">Hacka GR1D - Insurance - <a href="https://panoramaseguro.com.br/tecnologia/inovacao-em-seguros-aplicativo-gamificado-de-previdencia-privada-e-premiado-no-2o-hacka-gr1d/">Project
-                  PIG</a></h3>
-              <p class="certificate__description">Challenge: use new models of insurance commercialization using
-                different solutions that a business platform offers (insurtech).</p>
-            </div>
-
-            <div class="certificate__content">
-              <h3 class="certificate__title">Hackathon Code Stage</h3>
-              <p class="certificate__description">Challenge: where intelligence amplifies emotion?
-                How can Artificial Intelligence and Machine Learning improve the consumer experience and boost the music
-                market?</p>
-            </div>
-          </div>
-        </section>
-
-        <!--========== INTERESTS ==========-->
-        <section class="interests section" id="interest">
-          <h2 class="section-title">Interest</h2>
-          <div class="interests__container bd-grid">
-            <div class="interests__content">
-              <i class="bx bx-headphone interests__icon"></i>
-              <span class="interest__name">Music</span>
-            </div>
-
-            <div class="interests__content">
-              <i class="bx bx-book interests__icon"></i>
-              <span class="interest__name">Read</span>
-            </div>
-
-            <div class="interests__content">
-              <i class="bx bxs-plane-alt interests__icon"></i>
-              <span class="interest__name">Travel</span>
-            </div>
-
-            <div class="interests__content">
-              <i class="bx bx-dumbbell interests__icon"></i>
-              <span class="interest__name">Fitness</span>
-            </div>
-
-            <div class="interests__content">
-              <i class='bx bxs-pizza interests__icon'></i>
-              <span class="interest__name">Food</span>
-            </div>
-
-            <div class="interests__content">
-              <i class='bx bx-joystick-alt interests__icon'></i>
-              <span class="interest__name">Games</span>
-            </div>
-          </div>
-        </section>
+          </section>
+        </div>
       </div>
-    </div>
-  </main>
+    </main>
 
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+      <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
+    </a>
+    <!--========== HTML2PDF ==========-->
+    <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
 
-
-  <!--========== SCROLL TOP ==========-->
-  <a href="#" class="scrolltop" id="scroll-top">
-    <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
-  </a>
-  <!--========== HTML2PDF ==========-->
-  <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
-
-  <script src="assets/js/main.js"></script>
-</body>
-
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>

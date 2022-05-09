@@ -1,5 +1,5 @@
 /*===== GOOGLE FONTS =====*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 /*===== VARIABLES CSS =====*/
 :root {
@@ -8,14 +8,16 @@
   /*========== Colors ==========*/
   --title-color: #0b0a0a;
   --text-color: #403a3a;
-  --text-color-light: #a01474;
+  --text-color-light: #707070;
   --container-color: #fafafa;
-  --container-color-alt: #f0efef;
+  --container-color-alt: #021b33;
   --body-color: #fcfcfc;
   --text-color-light-gray: #707070;
+  --side-color: #f2f2f2;
+  --side-text-color: #bfbfbf;
 
   /*========== Font and typography ==========*/
-  --body-font: "Poppins", sans-serif;
+  --body-font: 'Poppins', sans-serif;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
@@ -54,6 +56,7 @@ body.dark-theme {
   --container-color: #212121;
   --container-color-alt: #181616;
   --body-color: #2b2b2b;
+  --side-color: #f2f2f2;
 }
 /*========== Button Dark/Light ==========*/
 .change-theme {
@@ -78,24 +81,15 @@ body.scale-cv {
   --small-font-size: 0.75rem;
   --smaller-font-size: 0.688rem;
 }
-/*========== Generate PDF button ==========*/
-.generate-pdf {
-  /* display: none; */
-  position: absolute;
-  top: 2.2rem;
-  left: 0;
-  font-size: 1.2rem;
-  color: var(--text-color);
-  cursor: pointer;
-}
 
-.generate-pdf:hover {
-  color: var(--text-color-light);
-}
 /*========== Classes modified to reduce size and print on A4 sheet ==========*/
 .scale-cv .change-theme,
 .scale-cv .generate-pdf {
   display: none;
+}
+
+.generate-pdf {
+  display: none !important;
 }
 
 .scale-cv .bd-container {
@@ -246,7 +240,7 @@ img {
   width: 100%;
   position: fixed;
   bottom: 0;
-  left: 0 "";
+  left: 0 '';
   z-index: var(--z-fixed);
   background-color: var(--body-color);
   box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1);
@@ -319,7 +313,7 @@ img {
 }
 /* Active menu link */
 .active-link {
-  color: var(--text-color-light);
+  color: var(--container-color-alt);
 }
 
 /*========== HOME ==========*/
@@ -381,17 +375,14 @@ img {
 }
 
 .home__button-movil:hover {
-  background-color: var(--text-color-light);
-  color: var(--container-color);
+  background-color: var(--container-color-alt);
+  color: #f2f2f2;
 }
 
 /*========== SOCIAL ==========*/
 .social__container {
-  /* grid-template-columns: max-content;
-  gap: 1rem; */
-  display: inline-block;
-  display: flex;
-  justify-content: space-between;
+  grid-template-columns: max-content;
+  gap: 1rem;
   align-items: center;
 }
 
@@ -407,12 +398,14 @@ img {
 }
 
 .social__icon {
+  margin-right: 0.25rem;
   font-size: 1.2rem;
 }
 
 /*========== PROFILE ==========*/
 .profile__description {
   text-align: center;
+  font-size: var(--small-font-size);
 }
 
 /*========== EDUCATION AND EXPERIENCE ==========*/
@@ -459,6 +452,9 @@ img {
 .education__studies,
 .experience__company {
   font-size: var(--small-font-size);
+}
+
+.experience__company {
   color: var(--title-color);
 }
 
@@ -551,7 +547,7 @@ img {
 
 .scrolltop__icon {
   font-size: 1.2rem;
-  color: var(--text-color);
+  color: #f2f2f2;
 }
 
 .show-scroll {
@@ -598,7 +594,21 @@ img {
   }
 
   .generate-pdf {
-    display: inline-block;
+    display: inline-block !important;
+    color: #f2f2f2;
+    position: absolute;
+    top: 2.2rem;
+    left: 0;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+  .generate-pdf:hover {
+    color: var(--text-color-light);
+  }
+
+  .change-theme {
+    color: #f2f2f2;
   }
 
   .section-title,
@@ -625,6 +635,23 @@ img {
   .interests__container {
     grid-template-columns: repeat(4, max-content);
     column-gap: 3.5rem;
+  }
+
+  .home__title,
+  .home__profession,
+  .resume__left .section-title,
+  .education__title,
+  .resume__left .experience__title,
+  .resume__left .education__studies {
+    color: var(--side-color);
+  }
+
+  .home__information,
+  .social__link,
+  .profile__description,
+  .education__year,
+  .skills__name {
+    color: var(--side-text-color);
   }
 }
 /* Classes modified for large screen size */ ;
