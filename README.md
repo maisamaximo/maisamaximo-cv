@@ -21,9 +21,4 @@
 ![](/assets/bxl-linkedin-square.svg) [@https:\/\/www.linkedin.com\/in\/maisa-maximo\/](https://linkedin.com/in/https:\/\/www.instagram.com\/in\/maisa-maximo\/)</br>
 ![](/assets/bxl-instagram.svg) [@https:\/\/www.linkedin.com\/maisamaximo_\/](https://instagram.com/https:\/\/www.instagram.com\/maisamaximo_\/)
 
-## Show your support
-
-Give a ⭐️ if this project helped you!
-
-***
-_This README was generated with ❤️  by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+<p align="center">𝙼𝚊𝚍𝚎 𝚠𝚒𝚝𝚑 𝚕𝚘𝚟𝚎 ❥<p>
