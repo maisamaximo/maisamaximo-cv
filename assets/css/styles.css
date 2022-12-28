@@ -360,7 +360,7 @@ img {
 }
 
 .home__title {
-  font-size: var(--h1-font-size);
+  font-size: 2.5rem;
 }
 
 .home__profession {
@@ -380,7 +380,12 @@ img {
 
 .home__icon {
   font-size: 1.2rem;
-  margin-right: 0.25rem;
+  margin-right: 0.75rem;
+}
+
+.home__link {
+    color: var(--text-color-light);
+    text-decoration: none;
 }
 
 .home__button-movil {
@@ -426,7 +431,7 @@ img {
 
 /*========== PROFILE ==========*/
 .profile__description {
-  text-align: center;
+  text-align: initial;
 }
 
 /*========== EDUCATION AND EXPERIENCE ==========*/
@@ -479,6 +484,11 @@ img {
 .education__year,
 .experience__description {
   font-size: var(--smaller-font-size);
+}
+
+.experience__skills {
+    color: #454f92;
+    font-size: 12px;
 }
 
 /*========== SKILLS AND LANGUAGES ==========*/
