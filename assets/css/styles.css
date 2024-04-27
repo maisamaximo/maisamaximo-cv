@@ -474,14 +474,17 @@ img {
   gap: 0rem;
 }
 
-.education__title,
 .experience__title {
   font-size: var(--h3-font-size);
 }
 
+.education__title{
+  font-size: var(--small-font-size);
+}
+
 .education__studies,
 .experience__company {
-  font-size: var(--small-font-size);
+  font-size: var(--smaller-font-size);
   color: var(--title-color);
 }
 
@@ -507,6 +510,7 @@ img {
 
 .category-title {
   margin-top: var(--mb-2);
+  font-size: var(--small-font-size);
 }
 
 .languages__content {
@@ -552,7 +556,7 @@ img {
 }
 
 .references__title {
-  font-size: var(--h3-font-size);
+  font-size: var(--small-font-size);
 }
 /*========== INTERESTS ==========*/
 .interests__container {
