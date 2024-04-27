@@ -1,5 +1,5 @@
 /*===== GOOGLE FONTS =====*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 /*===== VARIABLES CSS =====*/
 :root {
@@ -16,7 +16,7 @@
   --text-color-light-gray: #707070;
 
   /*========== Font and typography ==========*/
-  --body-font: 'Poppins', sans-serif;
+  --body-font: "Poppins", sans-serif;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
@@ -260,7 +260,7 @@ img {
   width: 100%;
   position: fixed;
   bottom: 0;
-  left: 0 '';
+  left: 0 "";
   z-index: var(--z-fixed);
   background-color: var(--body-color);
   box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1);
@@ -384,8 +384,8 @@ img {
 }
 
 .home__link {
-    color: var(--text-color-light);
-    text-decoration: none;
+  color: var(--text-color-light);
+  text-decoration: none;
 }
 
 .home__button-movil {
@@ -586,7 +586,6 @@ img {
   bottom: 5rem;
 }
 
-
 /* Style for the modal */
 .accordion-toggle {
   cursor: pointer;
@@ -595,42 +594,41 @@ img {
   font-size: 0.8rem;
 }
 
-#frontend-angular-skills p {  
+#frontend-angular-skills p {
   font-size: 0.8rem;
   color: var(--text-color-light);
 }
 
-
 .accordion-content {
   display: none;
-  }
+}
 
-  .experience__skills {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .column {
-    flex: 1;
-  }
-  
-  .column ul {
-    list-style-type: none;
-  }
-  
-  .column li {
-    padding: 5px 0;
-  }
+.experience__skills {
+  display: flex;
+  justify-content: space-between;
+}
 
-  .experience__skills_column {
-    flex: 1;
-    padding: 0 10px;
-  }
-  
-  .experience__skills_column ul {
-    list-style-type: disc;
-  }
-    
+.column {
+  flex: 1;
+}
+
+.column ul {
+  list-style-type: none;
+}
+
+.column li {
+  padding: 5px 0;
+}
+
+.experience__skills_column {
+  flex: 1;
+  padding: 0 10px;
+}
+
+.experience__skills_column ul {
+  list-style-type: disc;
+}
+
 /*========== MEDIA QUERIES ==========*/
 @media screen and (max-width: 320px) {
   .nav__list {
@@ -638,7 +636,6 @@ img {
     gap: 1rem 0.5rem;
   }
 }
-/* For small devices, menu two columns */
 @media screen and (min-width: 968px) {
   body {
     margin: 3rem 0;
@@ -699,4 +696,3 @@ img {
     column-gap: 3.5rem;
   }
 }
-/* Classes modified for large screen size */ ;
