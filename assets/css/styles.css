@@ -432,6 +432,7 @@ img {
 /*========== PROFILE ==========*/
 .profile__description {
   text-align: initial;
+  font-size: 14px;
 }
 
 /*========== EDUCATION AND EXPERIENCE ==========*/
