@@ -488,7 +488,7 @@ img {
 
 .experience__skills {
   color: var(--text-color-light);
-  font-size: 12px;
+  font-size: 10px;
 }
 
 /*========== SKILLS AND LANGUAGES ==========*/
@@ -590,7 +590,7 @@ img {
 /* Style for the modal */
 .accordion-toggle {
   cursor: pointer;
-  text-decoration: none;
+  text-decoration: underline;
   color: var(--text-color-light);
   font-size: 0.8rem;
 }
@@ -605,6 +605,32 @@ img {
   display: none;
   }
 
+  .experience__skills {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .column {
+    flex: 1;
+  }
+  
+  .column ul {
+    list-style-type: none;
+  }
+  
+  .column li {
+    padding: 5px 0;
+  }
+
+  .experience__skills_column {
+    flex: 1;
+    padding: 0 10px;
+  }
+  
+  .experience__skills_column ul {
+    list-style-type: disc;
+  }
+    
 /*========== MEDIA QUERIES ==========*/
 @media screen and (max-width: 320px) {
   .nav__list {
