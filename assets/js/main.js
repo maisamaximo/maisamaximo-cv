@@ -130,3 +130,21 @@ resumeButton.addEventListener('click', () => {
   // 3. The .scale-cv class is removed from the body after 5 seconds to return to normal size.
   setTimeout(removeScale, 5000)
 })
+
+function openModal() {
+  var modal = document.getElementById("skillModal");
+  modal.style.display = "block";
+}
+
+function closeModal() {
+  var modal = document.getElementById("skillModal");
+  modal.style.display = "none";
+}
+
+// Close modal if clicking outside of the modal content
+window.onclick = function(event) {
+  var modal = document.getElementById("skillModal");
+  if (event.target === modal) {
+      modal.style.display = "none";
+  }
+};
