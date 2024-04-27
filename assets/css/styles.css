@@ -683,7 +683,7 @@ img {
 
   .section-title,
   .profile__description {
-    text-align: initial;
+    text-align: justify;
   }
 
   .home__container {
