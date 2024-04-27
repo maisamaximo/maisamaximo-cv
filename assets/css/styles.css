@@ -238,7 +238,7 @@ img {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
   text-transform: uppercase;
-  letter-spacing: 0.35rem;
+  letter-spacing: 0.20rem;
   text-align: center;
   margin-bottom: var(--mb-3);
 }
