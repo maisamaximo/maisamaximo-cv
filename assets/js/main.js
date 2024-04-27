@@ -141,10 +141,9 @@ function closeModal() {
   modal.style.display = "none";
 }
 
-// Close modal if clicking outside of the modal content
-window.onclick = function(event) {
-  var modal = document.getElementById("skillModal");
-  if (event.target === modal) {
-      modal.style.display = "none";
-  }
-};
+function toggleAccordion(contentId) {
+  const content = document.getElementById(contentId);
+  const isDisplayed = content.style.display === 'block';
+  
+  content.style.display = isDisplayed ? 'none' : 'block';
+}
