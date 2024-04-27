@@ -497,6 +497,14 @@ img {
   gap: 0;
 }
 
+.skills__data {
+  font-size: var(--smaller-font-size);
+}
+
+.category-title {
+  margin-top: var(--mb-2);
+}
+
 .languages__content {
   gap: 0;
 }
@@ -505,7 +513,6 @@ img {
 .languages__name {
   display: flex;
   align-items: center;
-  margin-bottom: var(--mb-2);
 }
 
 .skills__circle,
