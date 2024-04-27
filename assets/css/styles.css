@@ -465,9 +465,12 @@ img {
   transform: translate(7px, 0);
 }
 
-.education__data,
 .experience__data {
   gap: 0.5rem;
+}
+
+.education__data {
+  gap: 0rem;
 }
 
 .education__title,
@@ -535,7 +538,7 @@ img {
 }
 /*========== REFERENCES ==========*/
 .references__content {
-  gap: 0.25rem;
+  gap: 0rem;
 }
 
 .references__subtitle {
@@ -691,7 +694,7 @@ img {
   }
 
   .references__container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .languages__content {
